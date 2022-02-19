@@ -1,0 +1,236 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #e2fdff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+
+/* Navbar : Logo */
+#logo {
+    height: 45px;
+    margin: 32px 22px;
+}
+
+#logo img{
+    height: 140px;
+    margin: -40px 6px;
+}
+
+#logo img:hover{
+    cursor: pointer;
+}
+
+/* Navbar : ul  */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: #cb997e;
+    text-decoration: underline;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 592px;
+    /* height: 29rem;  */
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url("../bg/bg1.jpeg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+.topSpan{
+    padding: 5px;
+    font-size: 4rem;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #463f3a;
+    color: white;
+    margin: 40px 0;
+    font-size: 1.5rem;
+    transition: all 0.25s;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    background-color: #eb5e28;
+    cursor: pointer;
+}
+
+.homeSpan{
+    /* color: #e0afa0; */
+    font-weight: bolder;
+    animation-name: homeSpan;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes homeSpan{
+    from{color: #1d4e89;}
+    to{color: #f7ba94;}
+}
+
+/* Services */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid #b68541;
+    border-radius: 12%;
+    padding: 3px 20px;
+    margin: 3px 20px;
+    background: #ffe8d6;
+}
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+
+/* Client Section */
+#client-container{
+    height: 344px;
+}
+
+#clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 50px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+/* Contact  */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box form{
+    width: 40%;
+}
+.form-entities{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-entities input{
+    margin: 0.3rem;
+    padding: 1rem;
+}
+
+/* Footer  */
+#footer{
+    text-align: center;
+    padding-top: 22px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Utility Classes */
+.paraTop{
+    font-size: 1.3rem;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+}
+
+.para{
+    font-size: 1.3rem;
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.h-primary-1{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+}
+
+.h-primary-2{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    margin: 20px 0;
+    margin-top: 45px;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+/* 
+@media (min-width:1366px) and (max-width:2660px){
+    #home{
+        height: 1120px;
+    }
+} */

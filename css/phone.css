@@ -1,0 +1,59 @@
+/* html{
+    background-color: rebeccapurple;
+} */
+
+/* Navigation  */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+
+/* Home */
+#home{
+    height: 371px;
+    padding: 3px 68px;
+}
+
+#home::before{
+    height: 400px;
+}
+
+#home p{
+    font-size: 0.7rem;
+}
+
+.topSpan{
+    font-size: 1.2rem;
+    margin-top: 167px;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+}
+
+/* Clients */
+#clients{
+    overflow: hidden;
+}
+
+#clients img{
+    height: 85px;
+}
+
+/* Contact */
+
+/* Utility Classes */
+h-primary{
+    font-size: 23px;
+}
+
+.btn{
+    font-size: 0.7rem;
+    padding: 4px 8px;
+}
+
